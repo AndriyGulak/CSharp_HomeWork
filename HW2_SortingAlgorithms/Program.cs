@@ -83,17 +83,17 @@ namespace HW2_SortingAlgorithms
                 var x = 0;
                 bool equal = true;
                 if (i == 0)
-                    x = rnd.Next(0, array0.Length * 10);
+                    x = rnd.Next(0, array10.Length * 10);
                 else
                 {
                     equal = true;
                     while (equal)
                     {
                         equal = false;
-                        x = rnd.Next(0, array0.Length * 10);
+                        x = rnd.Next(0, array10.Length * 10);
                         for (int j = 0; j < i; j++)
                         {
-                            if (array0[i] == x)
+                            if (array10[i] == x)
                                 equal = true;
                         }
                     }
@@ -128,22 +128,22 @@ namespace HW2_SortingAlgorithms
             var array26 = new int[50000];
             var array27 = new int[50000];
 
-            for (int i = 0; i < array0.Length; i++)
+            for (int i = 0; i < array20.Length; i++)
             {
                 var x = 0;
                 bool equal = true;
                 if (i == 0)
-                    x = rnd.Next(0, array0.Length * 10);
+                    x = rnd.Next(0, array20.Length * 10);
                 else
                 {
                     equal = true;
                     while (equal)
                     {
                         equal = false;
-                        x = rnd.Next(0, array0.Length * 10);
+                        x = rnd.Next(0, array20.Length * 10);
                         for (int j = 0; j < i; j++)
                         {
-                            if (array0[i] == x)
+                            if (array20[i] == x)
                                 equal = true;
                         }
                     }
