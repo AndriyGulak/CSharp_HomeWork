@@ -13,9 +13,9 @@
 
     abstract class Logistic
     {
-        public abstract Itransport FactoryMethod();
+        public abstract ITransport FactoryMethod();
 
-        public string SomeOperation()
+        public string Send()
         {
             var product = FactoryMethod();
             var result = "Delivered by "  + product.Delivery();
@@ -26,7 +26,7 @@
 
     class RoadLogistic : Logistic
     {
-        public override Itransport FactoryMethod()
+        public override ITransport FactoryMethod()
         {
             return new Truck();
         }
@@ -34,18 +34,18 @@
 
     class SeaLogistic : Logistic
     {
-        public override Itransport FactoryMethod()
+        public override ITransport FactoryMethod()
         {
             return new Ship();
         }
     }
 
-    public interface Itransport
+    public interface ITransport
     {
         string Delivery();
     }
 
-    class Truck : Itransport
+    class Truck : ITransport
     {
         public string Delivery()
         {
@@ -53,7 +53,7 @@
         }
     }
 
-    class Ship : Itransport
+    class Ship : ITransport
     {
         public string Delivery()
         {
@@ -72,9 +72,9 @@
                 ClientCode(new SeaLogistic());
         }
 
-        public void ClientCode(Logistic creator)
+        public void ClientCode(Logistic logistic)
         {
-            Console.WriteLine("I do not care about logistic.\n" + creator.SomeOperation());
+            Console.WriteLine("I do not care about logistic.\n" + logistic.Send());
         }
     }
 }
