@@ -18,7 +18,7 @@
         public string SomeOperation()
         {
             var product = FactoryMethod();
-            var result = "Delivered by "  + product.Operation();
+            var result = "Delivered by "  + product.Delivery();
 
             return result;
         }
@@ -42,12 +42,12 @@
 
     public interface Itransport
     {
-        string Operation();
+        string Delivery();
     }
 
     class Truck : Itransport
     {
-        public string Operation()
+        public string Delivery()
         {
             return "Truck";
         }
@@ -55,7 +55,7 @@
 
     class Ship : Itransport
     {
-        public string Operation()
+        public string Delivery()
         {
             return "Ship";
         }
