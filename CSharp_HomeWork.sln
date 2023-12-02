@@ -7,7 +7,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HM1_Algorithms", "CSharp_Ho
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HW2_SortingAlgorithms", "HW2_SortingAlgorithms\HW2_SortingAlgorithms.csproj", "{53D22321-5965-4371-B0D5-D8D0F5EA86CC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HW3_Builder_Pattern", "HW3_Patterns\HW3_Builder_Pattern.csproj", "{13D35B89-2AF0-4EBA-A53F-570A2E796221}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HW3_Builder_Pattern", "HW3_Builder_Pattern\HW3_Builder_Pattern.csproj", "{13D35B89-2AF0-4EBA-A53F-570A2E796221}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HW3_FactoryMethod_Pattern", "HW3_FactoryMethod_Pattern\HW3_FactoryMethod_Pattern.csproj", "{9621822C-EFBD-4FA2-8F47-EDD4EF607C81}"
 EndProject
