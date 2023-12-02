@@ -5,7 +5,7 @@
         static void Main(string[] args)
         {
             Console.WriteLine("Hello, HW 3!");
-            //Factory Method
+            //Builder
             var director = new Director();
             var builder = new HouseBuilder();
             director.Builder = builder;
