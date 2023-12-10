@@ -119,14 +119,14 @@ namespace HW2_SortingAlgorithms
             SortArray(array17, TimSort);
 
             // 50000
-            var array20 = new int[50000];
-            var array21 = new int[50000];
-            var array22 = new int[50000];
-            var array23 = new int[50000];
-            var array24 = new int[50000];
-            var array25 = new int[50000];
-            var array26 = new int[50000];
-            var array27 = new int[50000];
+            var array20 = new int[500000];
+            var array21 = new int[500000];
+            var array22 = new int[500000];
+            var array23 = new int[500000];
+            var array24 = new int[500000];
+            var array25 = new int[500000];
+            var array26 = new int[500000];
+            var array27 = new int[500000];
 
             for (int i = 0; i < array20.Length; i++)
             {
@@ -417,7 +417,8 @@ namespace HW2_SortingAlgorithms
             stopwatch.Start();
             sort(array);
             stopwatch.Stop();
-            Console.WriteLine($"{sort.Method}(array): " + stopwatch.ElapsedMilliseconds.ToString());
+            //Console.WriteLine($"{sort.Method}(array): " + stopwatch.ElapsedMilliseconds.ToString());
+            Console.WriteLine($"{sort.Method}(array): {new String('.', 25)}" + TimeSpan.FromMilliseconds(stopwatch.ElapsedMilliseconds).ToString());
         }
     }
 }
